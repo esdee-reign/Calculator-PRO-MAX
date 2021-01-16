@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,31 +14,34 @@
     <div class="calculatorBody">
 
 
-        <div class="screen"></div>
+        <div class="screen">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
 
 
         <div class="buttonGroup">
 
-            <button class="operator" id="clear">C</button>
-            <button class="operator" id="backspace"><</button>
-            <button class="operator" id="modulus">%</button>
-            <button class="operator" id="divide">/</button>
-            <button class="digit" id="1">1</button>
-            <button class="digit" id="2">2</button>
-            <button class="digit" id="3">3</button>
-            <button class="operator" id="multiply">x</button>
-            <button class="digit" id="4">4</button>
-            <button class="digit" id="5">5</button>
-            <button class="digit" id="6">6</button>
-            <button class="operator" id="minus">-</button>
-            <button class="digit" id="7">7</button>
-            <button class="digit" id="8">8</button>
-            <button class="digit" id="9">9</button>
-            <button class="operator" id="add">+</button>
-            <button class="operator" id="exponent">e</button>
-            <button class="digit" id="0">0</button>
-            <button class="operator" id="dot">.</button>
-            <button class="operator equal" id="equal">=</button>
+            <button data-all-clear class="operator">AC</button>
+            <button data-delete class="operator">C</button>
+            <button data-operation class="operator">%</button>
+            <button data-operation class="operator">/</button>
+            <button data-number class="digit">1</button>
+            <button data-number class="digit">2</button>
+            <button data-number class="digit">3</button>
+            <button data-operation class="operator">x</button>
+            <button data-number class="digit">4</button>
+            <button data-number class="digit">5</button>
+            <button data-number class="digit">6</button>
+            <button data-operation class="operator">-</button>
+            <button data-number class="digit">7</button>
+            <button data-number class="digit">8</button>
+            <button data-number class="digit">9</button>
+            <button data-operation class="operator">+</button>
+            <button data-operation class="operator">e</button>
+            <button data-number class="digit">0</button>
+            <button data-number class="number">.</button>
+            <button data-equals class="operator equal">=</button>
 
         </div>
 
@@ -47,4 +51,3 @@
 
     <script src="script.js"></script>
 </body>
-</html>

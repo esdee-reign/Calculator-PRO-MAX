@@ -21,6 +21,23 @@ html, body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    color: rgba(0, 0, 0, .75);
+    font-size: 1rem;
+}
+
+.current-operand {
+    color: black;
+    font-size: 2    rem;
 }
 
 .buttonGroup {
@@ -64,4 +81,4 @@ button {
 .equal:hover {
     background-color: #3CC13B;
     columns: white;
-}
+} 
