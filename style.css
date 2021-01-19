@@ -6,15 +6,16 @@ html, body{
     font-family: 'Nunito', sans-serif;
 }
 
-.calculatorBody {
+.calculator {
     margin-top: 80px;
     width: 400px;
     height: 760px;
     background-color: #E0E4E8;
     border-radius: 28px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.screen {
+.output-screen {
     width: 316px;
     height: 106px;
     background-color: #F0F1F3;
@@ -30,14 +31,14 @@ html, body{
     word-break: break-all;
 }
 
-.previous-operand {
+.history-value {
     color: rgba(0, 0, 0, .75);
     font-size: 1rem;
 }
 
-.current-operand {
+.output-value {
     color: black;
-    font-size: 2    rem;
+    font-size: 2rem;
 }
 
 .buttonGroup {
@@ -60,11 +61,11 @@ button {
     transition-duration: 0.2s;
 }
 
-.digit {
+.number {
     background-color: #616569;
     color: #E1E4E8;
 }
-.digit:hover {
+.number:hover {
     background-color: white;
     color: #616569;
 }
@@ -78,7 +79,7 @@ button {
     color: #616569;
 }
 
-.equal:hover {
+#equals:hover {
     background-color: #3CC13B;
     columns: white;
 } 
